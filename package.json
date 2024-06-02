@@ -8,8 +8,7 @@
     "build:dev": "env-cmd -f .env.dev next build",
     "build:prod": "env-cmd -f .env.prod next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "@next/third-parties": "^14.2.3",
