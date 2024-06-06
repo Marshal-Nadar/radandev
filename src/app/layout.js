@@ -9,12 +9,12 @@ import GoogleAnalytics from '@/components/GoogleAnalytics/GoogleAnalytics';
 // import { AdblockContextProvider } from '@/context/AdblockContext';
 // import AdblockProvider from '@/providers/AdblockProvider';
 
-const inter = Quicksand({ subsets: ['latin'] });
+const inter = Quicksand({ subsets: ['latin'], display: 'swap' });
 
 export const metadata = {
   title: 'Home Page | Radandev',
   description:
-    'The best dev/tech blog site for developers who wants improve their career.',
+    'Struggling with online privacy? SquareX offers a secure browsing environment to shield you from online threats. Learn more about how it protects your data!',
 };
 
 export default function RootLayout({ children }) {
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           <ThemeProvider>
             <div className='container'>
               <div className='wrapper'>
-                <Navbar />
+                <Navbar className='navbar' />
                 {children}
                 <Footer />
               </div>
