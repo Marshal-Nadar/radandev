@@ -46,7 +46,7 @@ a {
   background: #81c389;
 }
 .container {
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: var(--bg);
   color: var(--textColor);
 }
