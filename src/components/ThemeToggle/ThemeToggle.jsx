@@ -9,12 +9,21 @@ import { trackGAEvent } from '@/utils/google-analytics';
 const ThemeToggle = () => {
   const { toggle, theme } = useContext(ThemeContext);
 
+  const handleToggle = () => {
+    if (theme === 'light') {
+      trackGAEvent('Button Clicks', 'Dark Mode Button', 'Footer');
+    } else {
+      trackGAEvent('Button Clicks', 'Light Mode Button', 'Footer');
+    }
+
+    toggle();
+  };
+
   return (
     <div
       className={styles.container}
       onClick={() => {
-        trackGAEvent('Button Clicks', 'Dark Mode Button', 'Footer');
-        toggle();
+        handleToggle();
       }}
       style={
         theme === 'dark'
